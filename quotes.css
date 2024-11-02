@@ -3,14 +3,17 @@
     padding: 0;
     font-family: 'poppins', sans-serif;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 body{
     background: #bbc6fa;
+    overflow: hidden;
 }
 .quote-box{
     background: #fff;
-    width: 700px;
+    width: 540px;
+    max-width: 900px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -91,4 +94,9 @@ body{
 .quote-box button:nth-child(2){
     background: transparent;
     color: #333;
+}
+@media (max-width: 600px){
+    .quote-box blockquote{
+        font-size: 1.3rem;
+    }
 }
